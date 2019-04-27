@@ -261,7 +261,7 @@ FarmNames2 = ['Farm1', 'Farm2', 'Farm3', 'Farm4', 'Farm5']
 #Setup
 ##############################################################################
 maker = "Rootyjr"
-cclicense = "(CC BY-NC-SA 3.0)"
+cclicense = "   MIT License   "
 
 
 def end2():
@@ -478,19 +478,6 @@ def buildinglist():
     print("2,               Farm (" + str(Farmfoodcost) + " food, " +
     str(Farmwoodcost) + " wood).")
     print("\033[1;m")
-
-
-def endgame():
-    print("The exit of this game was caused by you changing the creator name," +
-    " which was Rootyjr. ")
-    print("Please switch it back or the game will continue not " +
-    "to work. On the other hand you could try to fix it, but unless you know")
-    print("how to code python all you will do is break it.")
-    print("Please don't copy this game and call it your idea and your work.")
-    print("Please provide credit and reengineer the game or just play it. ;)")
-    print("Plus, if you actually know how to code python, then you know how to")
-    print("remove this message. Have fun!")
-
 
 def end():
     #Set basic variables for calculations.
@@ -835,71 +822,69 @@ print("                                                                     ")
 print("                              This Game                              ")
 print("                        Is Shared Accordingly                        ")
 print("                              Using The                              ")
-print("                          " + cclicense + "                          ")
+print("                          " + license + "                          ")
 print("\033[1;m")
 
-if maker == "Rootyjr":
-    level = input("(Easy, Medium, Hard?)> [Easy] ")
-    name = input("Your name?>")
-    if level == "" or level == "Easy" or level == "easy":
-        wood = 500
-        food = 500
-        gold = 500
-        wood2 = 300
-        food2 = 300
-        gold2 = 300
-        Settler()
-        Settler()
-        Settler()
-        Settler2()
-        Settler2()
-        Settler2()
-        House()
-        House2()
-    elif level == "Medium" or level == "medium":
-        wood = 300
-        food = 300
-        gold = 300
-        wood2 = 300
-        food2 = 300
-        gold2 = 300
-        Settler()
-        Settler()
-        Settler2()
-        Settler2()
-        House()
-        House2()
-    elif level == "Hard" or level == "hard":
-        wood = 100
-        food = 100
-        gold = 100
-        wood = 300
-        food = 300
-        gold = 300
-        Settler()
-        Settler()
-        Settler2()
-        Settler2()
-        House()
-        House2()
-    else:
-        wood = 500
-        food = 500
-        gold = 500
-        wood2 = 300
-        food2 = 300
-        gold2 = 300
-        Settler()
-        Settler()
-        Settler()
-        Settler2()
-        Settler2()
-        Settler2()
-        House()
-        House2()
-    actionstat()
+level = input("(Easy, Medium, Hard?)> [Easy] ")
+name = input("Your name?>")
+if level == "" or level == "Easy" or level == "easy":
+    wood = 500
+    food = 500
+    gold = 500
+    wood2 = 300
+    food2 = 300
+    gold2 = 300
+    Settler()
+    Settler()
+    Settler()
+    Settler2()
+    Settler2()
+    Settler2()
+    House()
+    House2()
+elif level == "Medium" or level == "medium":
+    wood = 300
+    food = 300
+    gold = 300
+    wood2 = 300
+    food2 = 300
+    gold2 = 300
+    Settler()
+    Settler()
+    Settler2()
+    Settler2()
+    House()
+    House2()
+elif level == "Hard" or level == "hard":
+    wood = 100
+    food = 100
+    gold = 100
+    wood = 300
+    food = 300
+    gold = 300
+    Settler()
+    Settler()
+    Settler2()
+    Settler2()
+    House()
+    House2()
 else:
-    endgame()
+    wood = 500
+    food = 500
+    gold = 500
+    wood2 = 300
+    food2 = 300
+    gold2 = 300
+    Settler()
+    Settler()
+    Settler()
+    Settler2()
+    Settler2()
+    Settler2()
+    House()
+    House2()
+actionstat()
+
 while kill == "false":
     if food < -50:
         kill = "true"
