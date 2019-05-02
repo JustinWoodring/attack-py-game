@@ -261,7 +261,7 @@ FarmNames2 = ['Farm1', 'Farm2', 'Farm3', 'Farm4', 'Farm5']
 #Setup
 ##############################################################################
 maker = "Rootyjr"
-cclicense = "   MIT License   "
+license = "   MIT License   "
 
 
 def end2():
